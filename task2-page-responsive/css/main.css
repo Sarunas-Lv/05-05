@@ -13,6 +13,17 @@
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr 5fr 3fr 5fr 5fr 2fr;
+  grid-template-areas: 
+  "navbar"
+  "empty"
+  "robot"
+  "button"
+  "laptop"
+  "server"
+  "lorem";
+}
+.fa-hamburger{
+  color: rgb(173, 173, 173);
 }
 .gird-container-a{
   display: flex;
@@ -22,6 +33,10 @@
   color: white;
   font-size: 23px;
   letter-spacing: 2px;
+  grid-area: navbar;
+}
+.gird-container-b{
+  grid-area: empty;
 }
 .gird-container-c{
   background-image: url(http://images01.nicepage.com/c461c07a441a5d220e8feb1a/248f288b31f35a72ba5bf92f/b4f60df5-647e-b99f-a687-ec47c26aa869.jpg?version=;);
@@ -29,6 +44,7 @@
   width: 100%;
   height: 100%;
   background-position: 50% 50%;
+  grid-area: robot;
 }
 .gird-container-d{
   padding-left: 7%;
@@ -37,6 +53,7 @@
   align-items: flex-start;
   background: rgb(0, 255, 242);
   color: #494399;
+  grid-area: button;
 }
 .gird-container-d span{
   margin: 20px auto 0 0;
@@ -67,18 +84,20 @@
   color: white;
 }
 .gird-container-e{
-  background-image: url(http://images01.nicepage.com/c461c07a441a5d220e8feb1a/c9800c0d1fa5538ab471fedd/2.jpg?version=);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  background-position: 50% 50%;
-}
-.gird-container-f{
   background-image: url(http://images01.nicepage.com/c461c07a441a5d220e8feb1a/c3664c7c1ef45e43bcdeaef8/1.jpg?version=);
   background-size: cover;
   width: 100%;
   height: 100%;
   background-position: 50% 50%;
+  grid-area: laptop;
+}
+.gird-container-f{
+  background-image: url(http://images01.nicepage.com/c461c07a441a5d220e8feb1a/c9800c0d1fa5538ab471fedd/2.jpg?version=);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  grid-area: server;
 }
 .gird-container-g{
   padding: 0.5rem;
@@ -89,6 +108,7 @@
   color: #494399;
   display: grid;
   align-items: center;
+  grid-area: lorem;
 }
 footer{
   padding: 2rem;
@@ -101,4 +121,81 @@ footer{
   justify-content: center;
   background-color: #333333;
   color: #ffffff;
+}
+@media screen and (min-width: 558px){
+  .grid-container{
+    margin: 0 auto;
+    max-width: 390px;
+  }
+}
+@media screen and (min-width: 768px){
+  .gird-container-a{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "logo . . . . . . . .  burger soc soc ";
+  }
+  .gird-container-a .logo{
+    grid-area: logo;
+  }
+  .gird-container-a .burger{
+    text-align: right;
+    grid-area: burger;
+  }
+  .gird-container-a .soc{
+    text-align: right;
+    grid-area: soc;
+  }
+  footer{
+    height: 200px;
+    padding: 0;
+  }
+  .container-container{
+    padding: 0;
+    padding-bottom: 90px;
+  }
+  .grid-container{
+    max-width: none;
+    width: 95%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 8fr 4fr 4fr;
+    grid-template-areas:
+    "navbar navbar"
+    "empty empty"
+    "robot robot"
+    "button server"
+    "laptop lorem";
+  }
+  .gird-container-d{
+    padding: 2rem;
+    padding-top: 5rem;
+  }
+  .gird-container-g{
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 991px){
+.gird-container-a{
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-areas: "logo . . . . . . . .  burger soc ";
+}
+.container-container{
+  padding-top:2rem;
+  height: auto;
+}
+.grid-container{
+  width: 980px;
+  height: 610px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 4fr 4fr;
+  grid-template-areas:
+  "navbar navbar navbar navbar"
+  "empty empty empty empty"
+  "robot robot button server"
+  "robot robot laptop lorem";
+}
+}
+@media screen and (min-width: 1200px){
+  .grid-container{
+    width: 1050px;
+  }
 }
