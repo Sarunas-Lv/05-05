@@ -1,7 +1,7 @@
 .container-container{
   height: 1600px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-top: 0px;
   padding-bottom: 50px;
   background-image: url(../img/background.jpg);
@@ -12,10 +12,64 @@
 .grid-container{
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr 1fr 3fr 2fr 3fr 3fr 2fr;
+  grid-template-rows: 1fr 1fr 5fr 3fr 5fr 5fr 2fr;
 }
 .gird-container-a{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 900;
+  color: white;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+.gird-container-c{
+  background-image: url(http://images01.nicepage.com/c461c07a441a5d220e8feb1a/248f288b31f35a72ba5bf92f/b4f60df5-647e-b99f-a687-ec47c26aa869.jpg?version=;);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+}
+.gird-container-d{
+  padding-left: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgb(0, 255, 242);
+  color: #494399;
+}
+.gird-container-d span{
+  margin: 20px auto 0 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+.gird-container-d p{
+  color: black;
+}
+.gird-container-d p a{
+  color: black;
+}
+.button-white{
+    background: white;
+    font-size: 0.875rem;
+    border-style: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-image: none;
+    margin: 15px auto 0 0;
+    text-align: center;
+    padding: 0.6rem 1.8rem;
+}
+.button-white:hover{
+  background-color: #494399;
+  color: white;
+}
+.gird-container-e{
+  background-image: url(http://images01.nicepage.com/c461c07a441a5d220e8feb1a/c9800c0d1fa5538ab471fedd/2.jpg?version=);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
 }
