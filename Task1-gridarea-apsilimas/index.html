@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    .grid-container{
+      display: grid;
+      width: 500px;
+      height: 400px;
+      margin: 4rem auto;
+      grid-template-areas: "red green green green" "red . blue violet" "yellow yellow blue violet";
+    }
+    .grid-container-a{
+      background: red;
+      grid-area: red;
+    }
+    .grid-container-b{
+      background: green;
+      grid-area: green;
+    }
+    .grid-container-c{
+      background: blue;
+      grid-area: blue;
+    }
+    .grid-container-d{
+      background: violet;
+      grid-area: violet;
+    }
+    .grid-container-e{
+      background: yellow;
+      grid-area: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-container-a"></div>
+    <div class="grid-container-b"></div>
+    <div class="grid-container-c"></div>
+    <div class="grid-container-d"></div>
+    <div class="grid-container-e"></div>
+  </div>
+</body>
+</html>

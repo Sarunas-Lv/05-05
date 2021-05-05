@@ -1,0 +1,21 @@
+.container-container{
+  height: 1600px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 0px;
+  padding-bottom: 50px;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 0%; 
+}
+.grid-container{
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr 2fr 3fr 3fr 2fr;
+}
+.gird-container-a{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
