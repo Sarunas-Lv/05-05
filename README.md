@@ -2,8 +2,7 @@
 
 - [General info](#general-info)
 - [Technologies](#technologies)
-- [Setup](#setup)
-- [Routes](#routes)
+
 
 ## General info
 
